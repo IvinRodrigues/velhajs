@@ -1,0 +1,12 @@
+.tabuleiro .posicao {
+
+    width: 80px;
+    height: 80px;
+    background-color: aqua;
+    display: inline-block;
+    text-align: center;
+}
+
+.linha {
+    margin: 10px;
+}
