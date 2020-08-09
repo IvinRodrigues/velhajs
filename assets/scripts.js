@@ -9,7 +9,7 @@ var tabuleiro = {
     },
     jogadorAtual: 1,
     iniciarPartida(){
-        document.querySelector('.jogadorAtual').innerHTML = tabuleiro.jogador1.nome        
+        document.querySelector('.jogador-atual').innerHTML = tabuleiro.jogador1.nome        
     },
     jogar: function(posicao){
         
@@ -17,11 +17,11 @@ var tabuleiro = {
             if(tabuleiro.jogadorAtual == 1){
                 tabuleiro.jogadorAtual ++
                 posicao.innerHTML = tabuleiro.jogador1.simbolo
-                document.querySelector('.jogadorAtual').innerHTML = tabuleiro.jogador2.nome
+                document.querySelector('.jogador-atual').innerHTML = tabuleiro.jogador2.nome
             } else {
                 tabuleiro.jogadorAtual --
                 posicao.innerHTML = tabuleiro.jogador2.simbolo
-                document.querySelector('.jogadorAtual').innerHTML = tabuleiro.jogador1.nome
+                document.querySelector('.jogador-atual').innerHTML = tabuleiro.jogador1.nome
             } 
         }
 
